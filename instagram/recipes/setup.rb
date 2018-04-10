@@ -41,6 +41,6 @@ end
 
 unicorn_config "/opt/unicorn.rb" do
   listen ({"unix:/tmp/sockets/unicorn.sock": nil})
-  working_directory node[:spooky][:path]
+  working_directory node[:instagram][:path]
   # /config/unicorn.rb
 end
